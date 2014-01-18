@@ -1,0 +1,19 @@
+{
+	"follows": [
+	    {
+			"id": "msval1",            
+			"usr": "msvaljek@gmail.com",
+			"follower": "monk-nt@gmail.com"            
+		},	    
+		{
+			"id": "msval2",            
+			"usr": "msvaljek@gmail.com",
+			"follower": "chris@gmail.com"            
+		},
+		{
+			"id": "msval3",            
+			"usr": "msvaljek@gmail.com",
+			"follower": "paul@gmail.com"            
+		}
+	]
+}
