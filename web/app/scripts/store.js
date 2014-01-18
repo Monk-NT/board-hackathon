@@ -1,1 +1,1 @@
-BoardHackathon.ApplicationAdapter = DS.FixtureAdapter;
+Web.ApplicationAdapter = DS.FixtureAdapter;

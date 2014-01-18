@@ -1,4 +1,4 @@
-var BoardHackathon = window.BoardHackathon = Ember.Application.create();
+var Web = window.Web = Ember.Application.create();
 
 /* Order and include as you please. */
 require('scripts/controllers/*');

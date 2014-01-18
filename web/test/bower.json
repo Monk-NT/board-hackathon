@@ -1,5 +1,5 @@
 {
-  "name": "board-hackathon",
+  "name": "web",
   "private": true,
   "dependencies": {
     "chai": "~1.8.0",
