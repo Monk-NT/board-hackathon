@@ -1,15 +1,16 @@
 package main
 
 import (
-  "fmt"
   "github.com/gorilla/mux"
   "net/http"
+  "handler"
 )
 
 
 func main() {
   r:= mux.NewRouter()
-  r.HandleFunc("/", HomeHandler)
+  r.HandleFunc("/", http.FileServer(http.Dir("./")))
   http.Handle("/", r)
+  http.ListenAndServe(":8080",nil)
 }
 
