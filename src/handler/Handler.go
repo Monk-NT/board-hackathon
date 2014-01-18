@@ -1,30 +1,25 @@
 package handler
 
 import (
-  "html/template"
+  "fmt"
   "net/http"
-  "io/ioutil"
+  "boardDB"
+  "log"
 )
 
-
-type Page struct {
-  Title string
-  Body []byte
-}
-
-func HomeHandler (w http.ResponseWriter, r *http.Request) {
-  title := "index"
-  p, _ := loadPage(title)
-  t, _ := template.ParseFiles("index.html")
-  t.Execute(w,p)
-}
-
-func loadPage(title string) (*Page, error) {
-  filename := title + ".html"
-  body, err := ioutil.ReadFile(filename)
-  if err != nil {
-    return nil, err
+func UsersHandler(w http.ResponseWriter, r *http.Request) {
+  rows:=boardDB.GetUsersRows()
+  for rows.Next(){
+    var email string
+    var password string
+    var username string
+    if err := rows.Scan(&email, &password, &username); err != nil {
+      log.Fatal(err)
   }
+  fmt.Fprintf(w,"%s",email)
+ } 
 
-  return &Page{Title: title, Body: body}, nil
 }
+
+
+

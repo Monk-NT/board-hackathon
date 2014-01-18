@@ -7,10 +7,12 @@ import (
 )
 
 
+
 func main() {
   r:= mux.NewRouter()
-  r.HandleFunc("/", http.FileServer(http.Dir("./")))
-  http.Handle("/", r)
-  http.ListenAndServe(":8080",nil)
+  r.HandleFunc("/users",handler.UsersHandler)
+  r.PathPrefix("/").Handler(http.FileServer(http.Dir("./web/app/")))
+  http.Handle("/",r)
+  panic(http.ListenAndServe(":8080",nil))
 }
 
