@@ -1,0 +1,11 @@
+{
+  "nextId": null,
+  "items": [  
+          {
+            "id": 0,            
+            "email": "msvaljek@gmail.com",
+            "name": "Marko Svaljek",
+            "password": "Secret"            
+          } 
+  ]
+}

@@ -1,0 +1,25 @@
+{
+	"tweets": [
+	    {
+			"id": "hey",            
+			"tweetid": "1",
+			"tweet": "Hackathon rules",
+			"email": "msvaljek@gmail.com",
+			"crttime": "2014-01-18 11:11:11"            
+		},
+		{
+			"id": "hey ho",            
+			"tweetid": "2",
+			"tweet": "It does!",
+			"email": "msvaljek@gmail.com",
+			"crttime": "2014-01-18 11:12:11"            
+		},
+		{
+			"id": "hello",            
+			"tweetid": "3",
+			"tweet": "Aw man, happy to code!",
+			"email": "msvaljek@gmail.com",
+			"crttime": "2014-01-18 11:13:11"            
+		}
+	]
+}

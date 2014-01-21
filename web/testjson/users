@@ -1,0 +1,16 @@
+{
+	"users": [
+	    {
+			"id": "msvaljek@gmail.com",            
+			"email": "msvaljek@gmail.com",
+			"name": "Marko Svaljek",
+			"password": "Secret"            
+		},
+	    {
+			"id": "monk-nt@gmail.com",            
+			"email": "monk-nt@gmail.com",
+			"name": "Veljko Srdarević",
+			"password": "Secret"            
+		} 
+	]
+}

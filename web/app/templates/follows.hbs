@@ -1,0 +1,9 @@
+<h1>Follows</h1>
+
+<ul>
+ {{#each model}}
+ <li>{{#link-to 'follow' this}}{{this.id}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+
+{{outlet}}
